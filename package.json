@@ -1,10 +1,12 @@
 {
   "name": "is-odd-ai",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Why check if something is odd simply, when you can do it with ✨AI✨",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "mocha"
+    "build": "tsc",
+    "test": "mocha -r ts-node/register test/**/*.ts"
   },
   "author": "",
   "license": "Apache-2.0",
@@ -13,7 +15,12 @@
     "dotenv": "^16.4.5"
   },
   "devDependencies": {
-    "mocha": "^10.5.2"
+    "@types/chai": "^4.3.5",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "^20.16.13",
+    "mocha": "^10.5.2",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
   },
   "repository": {
     "type": "git",

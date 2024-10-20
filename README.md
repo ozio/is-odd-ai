@@ -30,7 +30,7 @@ OPENAI_API_KEY=your-api-key
 Here's an example of how to use the `is-odd-ai` package in your project:
 
 ```javascript
-const isOdd = require('is-odd-ai');
+import isOdd from 'is-odd-ai';
 
 (async () => {
     const number = 5;
